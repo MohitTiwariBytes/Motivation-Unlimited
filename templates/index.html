@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Motivation Unlimited</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="navbar">
+            <div class="logo">Motivation Unlimited</div>
+            <div class="navigation">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/feedback">Feedback</a>
+            </div>
+        </div>
+        <div class="content-main">
+            <h1 id="maintxt">Here is a great quote said by one of the greatest man:</h1>
+            <div class="quote-container">
+                <h1 id="quote-place">“{{ quote }}”</h1>
+                <p id="author-name">- {{ author }}</p>
+            </div>
+            <form method="get" action="/">
+                <button id="new-btn">Get Another Quote</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
