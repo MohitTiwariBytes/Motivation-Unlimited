@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Motivation Unlimited - About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="navbar">
+            <div class="logo"><a href="/">Motivation Unlimited</a></div>
+            <div class="navigation">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/feedback">Feedback</a>
+            </div>
+        </div>
+        <div class="content-main">
+            <form id="form" >
+                <label for="name">What is your name?</label>
+                <input name="name" type="text" placeholder="John Doe">
+                <label for="name">What is your E-mail?</label>
+                <input name="email" type="email" placeholder="john@doe.com">
+                <label for="message">Whats your feedback?</label>
+                <textarea name="message" id="problem" placeholder="Feedback"></textarea>
+                <button>Submit</button>
+            </form>
+        </div>
+        <div class="notice">
+            <div class="img-notice">
+                <img src="https://rawr.hackclub.com/dinosaur_coming_from_the_future_to_destroy_humanity.png" alt="">
+            </div>
+            <button id="close">⨯</button>
+            <h1>womp womp this form is fake lol</h1>
+            <span>this form is fake it does not work :p</span>
+        </div>
+    </div>
+</body>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</html>
